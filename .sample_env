@@ -1,0 +1,15 @@
+DEBUG=True
+SECRET_KEY=
+
+ODOO_URL=http://localhost:8069
+ODOO_DB=odoo
+ODOO_USER=admin
+ODOO_PASSWORD=admin
+
+POSTGRES_NAME=db_name
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+
+URL_PREFIX=odoo

@@ -5,18 +5,17 @@ from django.db import models
 from django.urls import reverse
 from django.utils import timezone
 
-from users.models import CustomUser
+#from users.models import CustomUser
 
 class Employee(models.Model):
     id = models.CharField(primary_key=True,max_length=100, blank=False)
     sf_user_id = models.CharField(max_length=100, blank=True, null=True)
     employee_first_name = models.CharField(max_length=100, blank=False, null=True)
-    employee_first_name = models.CharField(max_length=100, blank=False, null=True)
     employee_last_name = models.CharField(max_length=100, null=True)
     employee_middle_name = models.CharField(max_length=100, null=True)
     employee_full_name = models.CharField(max_length=100, blank=False)
     sanergy_department = models.CharField(max_length=100, blank=False, null=True)
-    sanergy_department_unit=models.ForeignKey('leave_management.SanergyDepartmentUnit', on_delete=models.DO_NOTHING, null=True)
+    #sanergy_department_unit=models.ForeignKey('leave_management.SanergyDepartmentUnit', on_delete=models.DO_NOTHING, null=True)
     employee_active = models.BooleanField(default=True, null=True)
     email = models.EmailField(unique=True, null=True)
     password = models.CharField(max_length=100, null=True)
